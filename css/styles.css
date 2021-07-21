@@ -1,0 +1,154 @@
+body {
+  background-color: #f2f2f2;
+  width: auto;
+}
+#topPage {
+  display: flex;
+  height: auto;
+}
+.logo {
+  width: 70%;
+}
+.nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.villes{
+  border: hidden;
+  font-size: large;
+}
+.recherche{
+  background-color: #0065fc;
+  color: white;
+  border-radius: 0px 40px 40px 0px;
+  border: hidden;
+  font-size: large;
+}
+.container{
+  display: flex;
+  margin-top: 30px;
+  height: 30px;
+}
+.container input{
+	font-size: 20px;
+  background-color: beige;
+  text-align: center;
+  position: relative;
+}
+.container i{
+  color: #0065fc;
+  background-color: #94b7eb81;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 100px;
+}
+.text{
+  border: hidden;
+  font-size: large;
+}
+.photo{
+  background-color: rgb(175, 175, 175);
+  display: flex;
+
+  min-width: 400px;
+  max-width: 850px;
+  height: 500px;
+  border-radius: 30px;
+}
+figure{
+  background-color: #FFF;
+  height: 180px;
+  padding-top: 5px;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+.photo img{
+  width: 200Px;
+  height: 100px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+
+/* .photo1{
+  background-color: rgb(255, 255, 255);;
+  max-width: 100%;
+  border-radius: 30px;
+}
+.img1{
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  height: 250px;
+  margin: 10px;
+}
+.img1 img{
+  border-radius: 30px;
+  height: 150px;
+  padding: 10px;
+}
+.span{
+  text-align: center;
+  color: rgb(0, 0, 0);
+} */
+
+
+/* ICI C EST POUR LES PLUS PETITS ECRAN */
+
+@media all and (max-width: 1024px)
+{
+  .nav{
+    flex-direction: column;
+  }
+  .logo img{
+    width: 70%;
+  }
+  .filtre{
+    flex-direction: column;
+  }
+  .icon{
+    margin: 5px;
+  }
+  .photo{
+    flex-direction: column;
+    text-align: center;
+    width: 250px;
+    margin-left: 120px;
+  }
+}
+
+
+
+
+
+
+/* ul.notes-echelle {
+	margin:0;
+	padding:0;
+	font:.75em/1.2 Arial, Helvetica, sans-serif;
+}
+ul.notes-echelle li {
+	float:left;
+	margin:0;
+	padding:0;
+	list-style:none;
+	min-width:20px;
+	min-height:20px;
+} */
+/* Correctif IE6 sur min-width & min-height */
+/* * html ul.notes-echelle.js li {
+	width:20px;
+	height:20px;
+}
+ul.notes-echelle li label {
+	display:block;
+	text-align:center;
+	line-height:20px;
+	background:url(etoiles.gif) center top no-repeat;
+	cursor:pointer;
+} */
+
