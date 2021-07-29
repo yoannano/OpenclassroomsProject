@@ -2,32 +2,63 @@
 body {
   background-color: #f2f2f2;
   font-family: 'Raleway';
+  margin: 0px;
+}
+h2{
+  font-weight: bold;
 }
 #topPage {
   display: flex;
   height: auto;
 }
-.logo {
-  width: 70%;
+.logo img {
+  height: 90px;
 }
-.nav {
-  word-spacing: 30px;
-  width: 30%;
+nav {
+  justify-content: space-between;
+  width: 40%;
   display: flex;
   align-items: center;
   font-size: 20px;
   font-weight: bold;
+  margin-left: auto;
 }
-.villes{
-  border: hidden;
-  font-size: large;
+nav span{
+  cursor: pointer;
 }
-.recherche{
+nav span:hover{
+  text-decoration: overline;
+  color: #0065FC;
+}
+.bloc0{
+  display: flex;
+  margin-top: 30px;
+  margin-left: 3px;
+}
+.bloc0 input{
+  height: 35px;
+  width: 150px;
+  text-align: center;
+  border: none;
+}
+ .recherche{
   background-color: #0065FC;
   color: white;
   border-radius: 0px 40px 40px 0px;
   border: hidden;
+  height: 35px;
   font-size: large;
+} 
+.icon0{
+  height: 35px;
+  width: 30px;
+  text-align: center;
+  background-color: #ebe7e7;
+  border-radius: 20px 0px 0px 20px;
+}
+.icon0 i{
+  font-size: x-large;
+  margin-top: 5px;
 }
 .container{
   display: flex;
@@ -75,7 +106,7 @@ body {
   margin-top: 30px;
   background-color: #ebe7e7;
   display: grid;
-  max-width: 860px;
+  max-width: 900px;
   min-width: 200px;
   height: 700px;
   grid-template-columns: repeat(3, 1fr);
@@ -462,7 +493,7 @@ body {
   font-weight: bold;
   margin-left: 10px;
 }
-.footer{
+footer{
   background-color:#ebe7e7;
   height: auto;
   width: auto;
@@ -495,26 +526,25 @@ body {
     flex-direction: column;
   }
   .blocPhotoHautDroiteGauche{
-    position: absolute;
     display: block;
     align-content: center;
-    width: 380px;
+    width: 340px;
     margin-left: auto;
     margin-right: auto;
+    height: auto;
   }
   .photoHautDroite{
-    position: relative;
-    margin-top: -1500px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
   }
   .photoHautGauche{
-    position: relative;
     background-color: #f2f2f2;
-    margin-top: 800px;
+    height: auto;
     display: block;
     width: 310px;
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
   }
   .img{
@@ -522,9 +552,9 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  .img img{
+   .img img{
     width: 300px;
-  }
+  } 
   .img01{
     width: 310px;
     margin-left: auto;
@@ -566,17 +596,19 @@ body {
     width: 300px;
   }
   .blocPhotoBasGaucheDroite{
-    position: absolute;
-    margin-top: 2610px;
-    margin-left: 30px;
+    height: 1500px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .photoBasGauche{
     background-color: #f2f2f2;
-    position: relative;
     display: block;
     height: auto;
-    width: 310px;
-    margin-left: 30px;
+    width: 320px;
+    margin-top: 750px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .imageBasGauche1{
     height: 200px;
@@ -616,18 +648,17 @@ body {
     margin-top: 5px;
   }
   .photoBasDroite{
-    position: relative;
     display: block;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: auto;
     height: auto;
-    width: 330px;
+    margin-left: auto;
+    width: 310px;
   }
   .imageBasDroite1{
     height: 200px;
     width: 310px;
     margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
   }
   .imageBasDroite1 img{
@@ -640,6 +671,7 @@ body {
     height: 200px;
     width: 310px;
     margin-left: auto;
+    margin-right: auto;
   }
   .imageBasDroite2 img{
     height: 150px;
@@ -651,6 +683,7 @@ body {
     height: 200px;
     width: 310px;
     margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
   }
   .imageBasDroite3 img{
@@ -659,11 +692,14 @@ body {
     margin-left: 5px;
     margin-top: 5px;
   }
-  .footer{
+  footer{
     flex-direction: column;
-    margin-top: 4120px;
     width: 310px;
-    margin-left: 60px;
+    height: 300px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f2f2f2;
   }
   .footerHebergement{
     margin-left: 20px;
