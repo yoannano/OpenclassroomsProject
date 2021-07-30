@@ -4,7 +4,7 @@ body {
   font-family: 'Raleway';
   margin: 0px;
 }
-.title{
+h1{
   font-weight: 900px;
 }
 span{
@@ -520,7 +520,7 @@ footer{
 
 /* ICI C EST POUR LES PLUS PETITS ECRAN */
 
-@media all and (max-width: 1050px)
+@media all and (max-width: 1080px)
 {
   /* .recherche{
     <i class="fas fa-search"></i>
@@ -529,8 +529,29 @@ footer{
     margin-left: auto;
     margin-right: auto;
   }
+  .activite{
+    margin-top: 100px;
+    margin-left: -600px;
+  }
+  .inscrire{
+    margin-top: 100px;
+    margin-right: 110px;
+  }
   .logo img{
     width: 60%;
+    margin-left: 10px;
+  }
+  nav span:hover{
+    text-decoration: underline;
+    color: #0065FC;
+  }
+  .bloc{
+    margin-top: 10px;
+    margin-right: 200px;
+  }
+  .bloc:nth-child(3){
+    margin-left: 450px;
+    margin-top: -35px;
   }
   .container{
     flex-direction: column;
