@@ -519,10 +519,17 @@ footer{
 
 
 /* ICI C EST POUR LES PLUS PETITS ECRAN */
-@media  screen and (max-width: 1230px) {
+@media only screen and (max-width: 1230px) {
   body{
     margin-left: auto;
     margin-right: auto;
+  }
+  nav{
+    width: 400px;
+    margin-left: 450px;
+  }
+  nav span{
+    padding: 20px;
   }
   .blocPhotoHautDroiteGauche{
     display: block;
@@ -544,6 +551,15 @@ footer{
     margin-top: 300px;
     margin-left: -110px;
   }
+  .photoBasDroite{
+    margin-top: 0px;
+    float: left;
+    margin-left: 20px;
+  }
+  footer{
+    margin-top: 600px;
+    background-color: #f2f2f2;
+  }
 
 
 
@@ -554,7 +570,7 @@ footer{
 
 }
 /* *************** ECRAN TELEPHONE******************************* */
-@media screen and (max-width: 500px)
+@media only screen and (max-width: 500px)
 {
   /* .recherche{
     <i class="fas fa-search"></i>
@@ -564,18 +580,19 @@ footer{
     margin-right: auto;
   }
   .inscrire{
-    margin-right: 60px;
+    margin-right: 190px;
+    float: left;
   }
   .activite{
+    float: left;
     margin-top: 100px;
-   margin-left: 70px;
   }
   .hebergement{
     margin-top: 100px;
-    margin-left: -220px;
+    margin-left: -460px;
   }
   .logo img{
-    width: 60%;
+    width: 1300%;
     margin-left: 10px;
   }
   .titres{
