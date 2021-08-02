@@ -52,6 +52,9 @@ nav span:hover{
   height: 35px;
   font-size: large;
 } 
+.recherche i{
+  visibility: hidden;
+}
 .icon0{
   height: 35px;
   width: 30px;
@@ -579,21 +582,26 @@ footer{
     margin-left: auto;
     margin-right: auto;
   }
-  .inscrire{
-    margin-right: 190px;
-    float: left;
+  .menuNav{
+    display: flex;
+  }
+  nav{
+    margin-left: 50px; 
+    width: 200px;
   }
   .activite{
-    float: left;
-    margin-top: 100px;
+    margin-top: 80px;
   }
   .hebergement{
-    margin-top: 100px;
-    margin-left: -460px;
+    margin-top: 80px;
+    margin-left: -200px;
   }
-  .logo img{
-    width: 1300%;
-    margin-left: 10px;
+  .inscrire{
+    margin-top: -30px;
+    margin-left: -300px;
+  }
+  .logo{
+    justify-content: center;
   }
   .titres{
     margin-left: 20px;
@@ -602,7 +610,8 @@ footer{
     width: 390px;
   }
   nav span:hover{
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 1px solid #0065FC;
     color: #0065FC;
   }
   .sousTitre{
@@ -610,6 +619,17 @@ footer{
   }
   .bloc0{
     margin-left: 20px;
+  }
+  .villes{
+    position: absolute;
+    z-index: 1;
+  }
+  .recherche{
+    position: absolute;
+    margin-left: 90px;
+  }
+  .recherche i{
+    visibility: visible;
   }
   .bloc{
     border: none;
