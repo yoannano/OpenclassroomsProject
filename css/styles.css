@@ -599,7 +599,7 @@ footer{
   margin-top: auto;
   margin-bottom: auto;
 }
-  }
+  
   .photoHautGauche{
     background-color: #f2f2f2;
     display: grid;
@@ -723,7 +723,7 @@ footer{
   .footerAssistance{
     margin-left: 20px;
   }
-
+}
 
 
 
