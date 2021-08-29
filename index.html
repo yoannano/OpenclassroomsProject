@@ -11,73 +11,80 @@
 </head>
 
 <!-- *********************************** LE HEADER + LA NAV ********************************************* -->
-<html>
+
 <body>
-<header>
-    <div class="logo">
-      <img src="img/logo/Reservia@3x.png" alt="" />
-    </div>
-    <nav>
-        <span class="hebergement">
-        Hebergements
-        </span>
-        <span class="activite">
-        Activités
-        </span>
-        <span class="inscrire">
-        S'inscrire
-        </span>
+  <header>
+    <nav class="header_nav">
+      <div class="logo_container">
+        <img src="img/logo/Reservia.svg" alt="logo Reservia" />
+      </div>
+      <a class="nav1" href="#blocPhoto">Hébergements</a>
+      <a class="nav2" href="#activites">Activités</a>
+      <a class="sign_up" href="#"><strong>S'inscrire</strong></a>
     </nav>
   </header>
 <!-- ************************************* RECHERCHE VILLES + OPTION ********************************************* -->
-<main>
+<!-- <main> -->
 <article>
     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
     <span>En plein centre ville ou en pleine nature</span>
-  <section class="recherche">
-    <i class="fas fa-map-marker-alt"></i>
-    <input class="villes" type="text" placeholder="Marseille, France" />
-    <button>Rechercher  <i class="fas fa-search"></i></button>
-  </section>
 </article>
   
+<div class="fonctionality--block">
+  <div class="fonctionality--block--icon">
+    <i class="fas fa-map-marker-alt"></i>
+  </div>
+  <a class="fonctionality--block--description">
+    <input class="input" placeholder="Marseille, France" >
+  </a>
+  <div class="rechercher">
+    <a href="#photoHautDroiteGauche">Rechercher</a>
+    <i class="fas fa-search"></i></div>
+</div>
+
 <section id="container">
     <h2>Filtres</h2>
-      <div class="bloc">
-        <div class="icon">
-          <i class="fas fa-money-bill-wave"></i>
-        </div>
-        <div class="input"> 
-          <input class="text" type="text" placeholder="Economique" />
-        </div>
+    <div class="block--filtre">
+      <div class="block--filtre--icon">
+        <i class="fas fa-money-bill-wave"></i>
       </div>
-      <div class="bloc">
-        <div class="icon">
+      <a class="block--filtre--description" href="#">
+        <span>Economique</span>
+      </a>
+      </div>
+      <div class="block--filtre">
+        <div class="block--filtre--icon">
           <i class="fas fa-child"></i>
         </div>
-        <div class="input"> 
-          <input class="text" type="text" placeholder="Familial"/>
+        <a class="block--filtre--description" href="#">
+          <span>Familial</span>
+        </a>
         </div>
-      </div>
-      <div class="bloc">
-        <div class="icon">
-          <i class="fas fa-heart"></i>
-       </div>
-        <div class="input">
-          <input class="text" type="text" placeholder="Romantique" />
+        <div class="block--filtre">
+          <img class="rose" src="https://img.icons8.com/color/48/000000/rose.png" alt="rose"/>
+          <img class="rose1" src="https://img.icons8.com/color/48/000000/rose.png" alt="rose"/>
+          <img class="rose2" src="https://img.icons8.com/color/48/000000/rose.png" alt="rose"/>
+          <div class="block--filtre--icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <a class="block--filtre--description" href="#">
+            <span>Romantique</span>
+          </a>
+          <!-- <img class="rose" src="https://img.icons8.com/color/48/000000/rose.png"/>
+          <img class="rose1" src="https://img.icons8.com/color/48/000000/rose.png"/>
+          <img class="rose2" src="https://img.icons8.com/color/48/000000/rose.png"/> -->
         </div>
-      </div>
-      <div class="bloc">
-        <div class="icon">
-          <i class="fas fa-dog"></i>
-        </div>
-        <div class="input">
-          <input class="text" type="text" placeholder="Animaux autorisés" />
-        </div>
-        </div>
+          <div class="block--filtre">
+            <div class="block--filtre--icon">
+              <i class="fas fa-dog"></i>
+            </div>
+            <a class="block--filtre--description" href="#">
+              <span>Animaux autorisés</span>
+            </a>
+            </div>
   </section>
       
-<!- ********************************************** PHOTO HAUT DROITE **************************************** -->
+ <!-- ********************************************** PHOTO HAUT DROITE ****************************************  -->
   <section id="blocPhoto">
 <div class="photoHautDroite">
       <div class="populaireIcon">
@@ -98,7 +105,7 @@
         <div class="span">
           <h3>Au coeur de l'eau Chambres d'hôtes</h3><br/>
           <span>A partir de 71€</span>
-          <div class="etoile">
+          <div class="etoile1">
             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
           </div>
         </div>
@@ -108,7 +115,7 @@
         <div class="span">
           <h3>Hôtel Tout bleu et blanc</h3><br/>
           <span>A partir de 68€</span>
-          <div class="etoile">
+          <div class="etoile1">
             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
            </div>
         </div>
@@ -117,7 +124,7 @@
  
       
   <!-- ************************************* IMAGES HEBERGEMENT ***************************************************** -->
-<section id="photoHautDroiteGauche">
+<!-- <section id="photoHautDroiteGauche"> -->
   <div class="photoHautGauche">
     <h2 class="titre">Hébergements à Marseille</h2>
       <div class="blocImg">
@@ -154,7 +161,7 @@
       <h3>Hôtel de la mer</h3><br/>
       <span>Nuit à partir de 46€</span>
       <div>
-        <div class="etoile1">
+        <div class="etoile0">
         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
        </div>
       </div>
@@ -180,45 +187,53 @@
     </div> 
     <h3 class="titreBasPage">Afficher plus</h3>
   </div> 
-</section> 
+<!-- </section> -->
 
-</section>
-<!-- **************************** PHOTO BAS DE PAGES GAUCHE *************************************** -->
-<section id="PhotoBasGaucheDroite">
- <!-- <div class="blocPhotoBasGaucheDroite">   -->
-  <h2 class="titreBasPage">Activités à Marseille</h2> 
-   <div class="photoBasGauche">
-    <div class="imageBasGauche1">
-      <img src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
-    <h3>Vieux port</h3>
-    </div>
-    <div class="imageBasGauche2">
-      <img src="img/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-      <h3>Fort de Pomègues</h3>
-    </div>
-    <div class="imageBasGauche3">
-      <img src="img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du frioul">
-      <h3>Îles du Frioul</h3>
-    </div>
-</div> 
-<!-- ******************************* PHOTO BAS DE PAGES DROITES********************************** -->
-<div class="photoBasDroite">
-  <div class="imageBasDroite1">
-    <img src="img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Palanques">
-    <h3>Parc National des Palanques</h3>
-  </div>
-  <div class="imageBasDroite2">
-    <img src="img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre Dame de la Garde">
-    <h3>Notre-Dame-de-la-Garde</h3>
-  </div>
-  <div class="imageBasDroite3">
-    <img src="img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
-    <h3>Parc Longchamp</h3>
-  </div>
-</div>
-</div>
 </section> 
-</main>
+<!-- **************************** PHOTO BAS DE PAGES GAUCHE *************************************** -->
+ 
+   <h3 id="activites">Activités à Marseille</h3>
+   <div class="container0001">
+    <div class="un bleu">
+      <!-- <div class="blocBasGauche"> -->
+      <div class="imageBasGauche1">
+        <img src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
+      <h3>Vieux port</h3>
+      </div>
+      </div>
+    <div class="deux vert">
+      <div class="imageBasGauche2">
+        <img src="img/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+        <h3>Fort de Pomègues</h3>
+      </div>
+      <div class="imageBasGauche3">
+        <img src="img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du frioul">
+        <h3>Îles du Frioul</h3>
+      </div>
+    </div>
+    <!-- </div> -->
+  <!-- </div> -->
+    <div class="trois jaune">
+      <!-- <div class="blocBasDroite"> -->
+      <div class="imageBasDroite1">
+        <img src="img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Palanques">
+        <h3>Parc National des Palanques</h3>
+      </div>
+      </div>
+    <div class="quatre">
+      <div class="imageBasDroite2">
+        <img src="img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre Dame de la Garde">
+        <h3>Notre-Dame-de-la-Garde</h3>
+      </div>
+      <div class="imageBasDroite3">
+        <img src="img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+        <h3>Parc Longchamp</h3>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+   <!-- </div> -->
+  
 <!-- ****************************************** footer**************************************************** -->
 <footer>
   <div class="footerPropos">
@@ -238,8 +253,6 @@
       <span>Nous contacter</span>
   </div>
 </footer>
-
-
 
 
 </body>
