@@ -255,9 +255,9 @@ a {
   margin-top: 0;
 }
 .blocImg img {
-  width: 95%;
+  width: 99%;
   height: 120px;
-  margin-left: 9px;
+  margin-left: 4px;
   margin-top: 5px;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
@@ -726,7 +726,7 @@ footer {
     text-align: center;
   }
   h1 {
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 15px;
     width: 100%;
     margin-left: auto;
@@ -810,11 +810,14 @@ footer {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
   }
+  .block--filtre span {
+    font-size: 10px;
+  }
   .block--filtre:nth-child(3) {
-    width: 30%;
+    width: 33%;
     float: right;
     margin-top: -40px;
-    margin-right: 20px;
+    margin-right: 25px;
   }
   .block--filtre:nth-child(5) {
     width: 55%;
@@ -879,12 +882,13 @@ footer {
 
   .imageBasGauche1 {
     height: 170px;
-    width: 100%;
-    margin-top: -40px;
-    margin-left: 0;
+    width: 98%;
+    margin-top: -20px;
+    margin-left: 3px;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
   }
   .imageBasGauche1 img {
     height: 120px;
@@ -896,11 +900,11 @@ footer {
   .imageBasGauche2 {
     margin-top: 40px;
     height: 170px;
-    width: 100%;
-    margin-top: 20px;
+    width: 98%;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
   }
   .imageBasGauche2 img {
     height: 130px;
@@ -910,11 +914,12 @@ footer {
   }
   .imageBasGauche3 {
     height: 170px;
-    width: 100%;
-    margin-top: 20px;
+    width: 98%;
+    margin-top: 40px;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
   }
   .imageBasGauche3 img {
     height: 130px;
@@ -924,10 +929,11 @@ footer {
   }
   .imageBasDroite1 {
     height: 170px;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 98%;
+    cursor: pointer;
   }
   .imageBasDroite1 img {
     height: 130px;
@@ -936,14 +942,17 @@ footer {
     object-fit: cover;
   }
   .imageBasDroite2 {
-    width: 100%;
+    width: 98%;
     height: 170px;
-    margin-top: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+
   }
   .imageBasDroite3 {
-    width: 100%;
+    width: 98%;
     height: 170px;
-    margin-top: 20px;
+    margin-top: 40px;
+    cursor: pointer;
   }
   .imageBasDroite2 img,
   .imageBasDroite3 img {
@@ -953,7 +962,7 @@ footer {
   }
 
   footer {
-    margin-top: 20px;
+    margin-top: 40px;
     display: block;
     margin-left: auto;
     margin-right: auto;
