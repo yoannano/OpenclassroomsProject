@@ -76,7 +76,8 @@ article > span {
   margin: 40px 0;
   border-radius: 20px;
   margin-left: 20px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); */
   cursor: pointer;
 }
 .fonctionality--block--description > input {
@@ -228,6 +229,7 @@ a {
   margin-top: 30px;
 }
 
+
 /**********************************HEBERGEMENT***************************/
 .photoHautGauche {
   background-color: #f2f2f2;
@@ -328,9 +330,8 @@ a {
   border-radius: 20px;
 }
 .img0 img {
-  margin-left: 10px;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-left: 5px;
+  margin-top: 5px;
   width: 45%;
   height: 140px;
   border-radius: 20px 0 0 20px;
@@ -382,9 +383,16 @@ a {
 }
 .deux {
   grid-area: zone2;
+  margin-bottom: auto;
+  margin-left: 10px;
+  width: 100%;
 }
 .trois {
   grid-area: zone3;
+}
+.quatre{
+  margin-bottom: auto;
+  width: 100%;
 }
 .un > img {
   width: 100%;
@@ -399,7 +407,15 @@ a {
   width: 50%;
 }
 
-.imageBasGauche1,
+.imageBasGauche1{
+  height: 350px;
+  width: 90%;
+  margin-left: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 .imageBasDroite1 {
   height: 350px;
   width: 90%;
@@ -416,30 +432,67 @@ a {
   object-fit: cover;
 }
 
-.imageBasGauche2,
-.imageBasDroite2 {
-  height: 150px;
-  width: 60%;
+.imageBasGauche2 {
+  height: 200px;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
-.imageBasGauche3,
+
+.imageBasDroite2 {
+  height: 150px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.imageBasGauche3 {
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 .imageBasDroite3 {
   height: 150px;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 85%;
   margin-top: 50px;
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
-.imageBasGauche2 img,
-.imageBasGauche3 img,
-.imageBasDroite2 img,
+.imageBasGauche2 img{
+  height: 150px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
+.imageBasGauche3 img{
+  height: 80px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
+.imageBasDroite2 img{
+  height: 100px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
 .imageBasDroite3 img {
   height: 100px;
   width: 100%;
@@ -603,19 +656,28 @@ footer {
   }
   .un {
     grid-area: zone1;
+    margin-left: 20px;
+    height: 360px;
+  
   }
   .deux {
     grid-area: zone2;
     width: 90%;
-    margin-left: 50px;
+    margin-left: 10px;
+    height: 360px;
+   
   }
   .trois {
     grid-area: zone3;
-    margin-left: -40px;
+    margin-left: 10px;
+    height: 360px;
+    
   }
   .quatre {
-    margin-left: 40px;
-    width: 80%;
+    margin-left: 10px;
+    width: 90%;
+    height: 360px;
+    
   }
   .un > img {
     width: 100%;
@@ -631,43 +693,79 @@ footer {
   }
   .imageBasGauche1,
   .imageBasDroite1 {
-    height: 330px;
-    width: 65%;
+    height: 320px;
+    width: 95%;
     margin-top: 20px;
-    margin-left: 70px;
+    margin-left: 10px;
     background-color: #fff;
     border-radius: 20px;
     float: left;
   }
-  .imageBasGauche1 img,
+  .imageBasGauche1 img{
+    height: 260px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
   .imageBasDroite1 img {
     height: 260px;
     width: 100%;
     border-radius: 20px 20px 0 0;
   }
-  .imageBasGauche2,
+  .imageBasGauche2 {
+    height: 180px;
+    width: 100%;
+    margin-top: 20px;
+    /* margin-right: 80px; */
+    background-color: #fff;
+    border-radius: 20px;
+    float: right;
+  }
+
   .imageBasDroite2 {
     height: 140px;
-    width: 60%;
+    width: 100%;
     margin-top: 20px;
-    margin-right: 100px;
+    /* margin-right: 80px; */
     background-color: #fff;
     border-radius: 20px;
     float: right;
   }
-  .imageBasGauche3,
+  .imageBasGauche3{
+    height: 120px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    float: right;
+  }
+  
   .imageBasDroite3 {
     height: 140px;
-    width: 60%;
-    margin-top: 50px;
-    margin-right: 100px;
+    width: 100%;
+    margin-top: 40px;
+    /* margin-right: 100px; */
     background-color: #fff;
     border-radius: 20px;
     float: right;
   }
-  .imageBasGauche2 img,
-  .imageBasGauche3 img,
-  .imageBasDroite2 img,
+  .imageBasGauche2 img{
+    height: 130px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .imageBasGauche3 img{
+    height: 90px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .imageBasDroite2 img{
+    height: 90px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
   .imageBasDroite3 img {
     height: 90px;
     width: 100%;
@@ -688,7 +786,7 @@ footer {
     background-color: #f2f2f2;
   }
   .footerPropos {
-    margin-left: 0px;
+    margin-left: -100px;
   }
 }
 
@@ -736,6 +834,7 @@ footer {
     width: 100%;
     margin-left: auto;
   }
+ 
   .fonctionality--block {
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
@@ -745,7 +844,8 @@ footer {
     align-items: center;
     margin: 40px 0;
     border-radius: 20px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); */
+    border: 1px solid rgba(0, 0, 0, 0.075);
     cursor: pointer;
   }
   .fonctionality--block--description > input {
@@ -822,6 +922,17 @@ footer {
   .block--filtre:nth-child(5) {
     width: 55%;
   }
+  .sousFiltres .fa-exclamation {
+    margin-left: 20px;
+    display: flex;
+    color: #0065fc;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 10%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    }
   /* **************************LES PLUS POPULAIRES********************* */
   #blocPhoto {
     width: 100%;
@@ -834,7 +945,7 @@ footer {
     margin-right: 0;
     display: block;
     width: 100%;
-    height: 690px;
+    height: 580px;
   }
   .img0 {
     margin-bottom: -50px;
@@ -856,27 +967,46 @@ footer {
     margin-right: 20px;
   }
   /**********************************HEBERGEMENT***************************/
+  .titre{
+    margin-top: -60px;
+  }
   .photoHautGauche {
     display: block;
+    background-color: #fff;
     grid: none;
-    margin-top: -60px;
+    height: 1600px;
+    margin-top: 80px;
     max-width: none;
     width: 100%;
     float: left;
   }
-  .blocImg {
-    margin-bottom: -50px;
+  .blocImg{
+    height: 220px;
+    margin-top: 30px;
+    display: block;
+    margin-left: 5px;
+    width: 95%;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.075);
   }
+  .titreBasPage{
+    float: left;
+    margin-top: 30px;
+  }
+  /* .blocImg {
+    margin-bottom: -10px;
+  } */
   /* ***********************************PHOTO BAS DE PAGE*************************** */
+  
   #activites {
     margin-left: 20px;
-    margin-top: -290px;
+    margin-top: -480px;
   }
   .container0001 {
     display: block;
     width: 100%;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 50px;
     height: 100%;
   }
 
